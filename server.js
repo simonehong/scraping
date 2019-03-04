@@ -25,10 +25,10 @@ app.set('view engine', 'handlebars');
 // Database Configuration with Mongoose
 // ---------------------------------------------------------------------------------------------------------------
 // Connect to localhost if not a production environment
-//if(process.env.NODE_ENV == 'production'){
- // mongoose.connect('mongodb://heroku_58c6l923:2gecc0p46jq110h6lke7elc7vb@ds115214.mlab.com:15214/heroku_58c6l923');
-//}
-//else{
+if(process.env.NODE_ENV == 'production'){
+  mongoose.connect('mongodb://heroku_vr7967j9:aovguh217dc0r5c2dt0fvp0cnn@ds221148.mlab.com:21148/heroku_vr7967j9');
+}
+else{
   mongoose.connect('mongodb://localhost/mellow');
   // YOU CAN IGNORE THE CONNECTION URL BELOW (LINE 41) THAT WAS JUST FOR DELETING STUFF ON A RE-DEPLOYMENT
   //mongoose.connect('mongodb://heroku_58c6l923:2gecc0p46jq110h6lke7elc7vb@ds115214.mlab.com:15214/heroku_58c6l923');
